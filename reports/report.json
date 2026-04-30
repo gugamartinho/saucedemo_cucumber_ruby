@@ -1,0 +1,3013 @@
+[
+  {
+    "id": "cart",
+    "uri": "features/cart.feature",
+    "keyword": "Feature",
+    "name": "Cart",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "keyword": "Background",
+        "name": "",
+        "description": "",
+        "line": 3,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am logged in as \"standard_user\"",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3309174500
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31400
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9800
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13400
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16300
+            }
+          }
+        ]
+      },
+      {
+        "id": "cart;cart-is-empty-by-default",
+        "keyword": "Scenario",
+        "name": "Cart is empty by default",
+        "description": "",
+        "line": 6,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I go to the cart page",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/cart_steps.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 74971200
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "the cart should have 0 items",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/cart_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10024520200
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:2"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31100
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 167440600
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Background",
+        "name": "",
+        "description": "",
+        "line": 3,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am logged in as \"standard_user\"",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 457057000
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22400
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9900
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10200
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18100
+            }
+          }
+        ]
+      },
+      {
+        "id": "cart;cart-shows-added-items",
+        "keyword": "Scenario",
+        "name": "Cart shows added items",
+        "description": "",
+        "line": 10,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I add \"Sauce Labs Backpack\" to the cart",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/inventory_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 254757500
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I add \"Sauce Labs Bike Light\" to the cart",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/inventory_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 237917200
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I go to the cart page",
+            "line": 13,
+            "match": {
+              "location": "features/step_definitions/cart_steps.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 74079600
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "the cart should have 2 items",
+            "line": 14,
+            "match": {
+              "location": "features/step_definitions/cart_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 112166000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:2"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 39200
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 192367900
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Background",
+        "name": "",
+        "description": "",
+        "line": 3,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am logged in as \"standard_user\"",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 442787900
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 43900
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30400
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 52700
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16300
+            }
+          }
+        ]
+      },
+      {
+        "id": "cart;remove-item-from-cart",
+        "keyword": "Scenario",
+        "name": "Remove item from cart",
+        "description": "",
+        "line": 16,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I add \"Sauce Labs Backpack\" to the cart",
+            "line": 17,
+            "match": {
+              "location": "features/step_definitions/inventory_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 189452700
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I go to the cart page",
+            "line": 18,
+            "match": {
+              "location": "features/step_definitions/cart_steps.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 142226900
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I remove \"Sauce Labs Backpack\" from the cart",
+            "line": 19,
+            "match": {
+              "location": "features/step_definitions/cart_steps.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 241516300
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "the cart should have 0 items",
+            "line": 20,
+            "match": {
+              "location": "features/step_definitions/cart_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10009632600
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:2"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23900
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 163177300
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Background",
+        "name": "",
+        "description": "",
+        "line": 3,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am logged in as \"standard_user\"",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 443220900
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21500
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8700
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9700
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7400
+            }
+          }
+        ]
+      },
+      {
+        "id": "cart;proceed-to-checkout",
+        "keyword": "Scenario",
+        "name": "Proceed to checkout",
+        "description": "",
+        "line": 22,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I add \"Sauce Labs Backpack\" to the cart",
+            "line": 23,
+            "match": {
+              "location": "features/step_definitions/inventory_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 182621800
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I go to the cart page",
+            "line": 24,
+            "match": {
+              "location": "features/step_definitions/cart_steps.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 81098100
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I proceed to checkout",
+            "line": 25,
+            "match": {
+              "location": "features/step_definitions/cart_steps.rb:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 138013800
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should be on the checkout page",
+            "line": 26,
+            "match": {
+              "location": "features/step_definitions/cart_steps.rb:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 32501600
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:2"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27700
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 186931300
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "checkout",
+    "uri": "features/checkout.feature",
+    "keyword": "Feature",
+    "name": "Checkout",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "keyword": "Background",
+        "name": "",
+        "description": "",
+        "line": 3,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am logged in as \"standard_user\"",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 441890800
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I add \"Sauce Labs Backpack\" to the cart",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/inventory_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 214123000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I go to the cart page",
+            "line": 6,
+            "match": {
+              "location": "features/step_definitions/cart_steps.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 71073100
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I proceed to checkout",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/cart_steps.rb:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 124051200
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28600
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9900
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18100
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9200
+            }
+          }
+        ]
+      },
+      {
+        "id": "checkout;complete-full-checkout-flow",
+        "keyword": "Scenario",
+        "name": "Complete full checkout flow",
+        "description": "",
+        "line": 9,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I fill checkout form with \"David\" \"Martinho\" \"2000-105\"",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/checkout_steps.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 410330300
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I continue to order summary",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/checkout_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 135039800
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see the order total",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/checkout_steps.rb:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 61325900
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I finish the order",
+            "line": 13,
+            "match": {
+              "location": "features/step_definitions/checkout_steps.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 119112900
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see the confirmation message",
+            "line": 14,
+            "match": {
+              "location": "features/step_definitions/checkout_steps.rb:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 46248100
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:2"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28500
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 166539400
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Background",
+        "name": "",
+        "description": "",
+        "line": 3,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am logged in as \"standard_user\"",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 467510700
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I add \"Sauce Labs Backpack\" to the cart",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/inventory_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 176885600
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I go to the cart page",
+            "line": 6,
+            "match": {
+              "location": "features/step_definitions/cart_steps.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 56394000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I proceed to checkout",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/cart_steps.rb:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 155104000
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30400
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18200
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17500
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17700
+            }
+          }
+        ]
+      },
+      {
+        "id": "checkout;error-when-first-name-is-missing",
+        "keyword": "Scenario",
+        "name": "Error when first name is missing",
+        "description": "",
+        "line": 16,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I fill checkout form with \"\" \"Martinho\" \"2000-105\"",
+            "line": 17,
+            "match": {
+              "location": "features/step_definitions/checkout_steps.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 445298800
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I continue to order summary",
+            "line": 18,
+            "match": {
+              "location": "features/step_definitions/checkout_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 118628100
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see a checkout error containing \"First Name is required\"",
+            "line": 19,
+            "match": {
+              "location": "features/step_definitions/checkout_steps.rb:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 44182000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:2"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28800
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 167474300
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Background",
+        "name": "",
+        "description": "",
+        "line": 3,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am logged in as \"standard_user\"",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 442633200
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I add \"Sauce Labs Backpack\" to the cart",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/inventory_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 181924400
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I go to the cart page",
+            "line": 6,
+            "match": {
+              "location": "features/step_definitions/cart_steps.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 57449300
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I proceed to checkout",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/cart_steps.rb:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 140506100
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22600
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9500
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9900
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7700
+            }
+          }
+        ]
+      },
+      {
+        "id": "checkout;error-when-last-name-is-missing",
+        "keyword": "Scenario",
+        "name": "Error when last name is missing",
+        "description": "",
+        "line": 21,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I fill checkout form with \"David\" \"\" \"2000-105\"",
+            "line": 22,
+            "match": {
+              "location": "features/step_definitions/checkout_steps.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 477888900
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I continue to order summary",
+            "line": 23,
+            "match": {
+              "location": "features/step_definitions/checkout_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 112345000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see a checkout error containing \"Last Name is required\"",
+            "line": 24,
+            "match": {
+              "location": "features/step_definitions/checkout_steps.rb:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 50717300
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:2"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30500
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 185374500
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Background",
+        "name": "",
+        "description": "",
+        "line": 3,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am logged in as \"standard_user\"",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 463722300
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I add \"Sauce Labs Backpack\" to the cart",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/inventory_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 195344700
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I go to the cart page",
+            "line": 6,
+            "match": {
+              "location": "features/step_definitions/cart_steps.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 54743400
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I proceed to checkout",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/cart_steps.rb:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 141118600
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31300
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11700
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11200
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8100
+            }
+          }
+        ]
+      },
+      {
+        "id": "checkout;error-when-postal-code-is-missing",
+        "keyword": "Scenario",
+        "name": "Error when postal code is missing",
+        "description": "",
+        "line": 26,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I fill checkout form with \"David\" \"Martinho\" \"\"",
+            "line": 27,
+            "match": {
+              "location": "features/step_definitions/checkout_steps.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 412666500
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I continue to order summary",
+            "line": 28,
+            "match": {
+              "location": "features/step_definitions/checkout_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 133216900
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see a checkout error containing \"Postal Code is required\"",
+            "line": 29,
+            "match": {
+              "location": "features/step_definitions/checkout_steps.rb:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 44636500
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:2"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 71400
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 184559100
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Background",
+        "name": "",
+        "description": "",
+        "line": 3,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am logged in as \"standard_user\"",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 464534200
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I add \"Sauce Labs Backpack\" to the cart",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/inventory_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 193089600
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I go to the cart page",
+            "line": 6,
+            "match": {
+              "location": "features/step_definitions/cart_steps.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 56913300
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I proceed to checkout",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/cart_steps.rb:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 142696900
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31200
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15100
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15900
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13500
+            }
+          }
+        ]
+      },
+      {
+        "id": "checkout;cancel-checkout-returns-to-cart",
+        "keyword": "Scenario",
+        "name": "Cancel checkout returns to cart",
+        "description": "",
+        "line": 31,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I cancel the checkout",
+            "line": 32,
+            "match": {
+              "location": "features/step_definitions/checkout_steps.rb:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 122926500
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should be on the cart page",
+            "line": 33,
+            "match": {
+              "location": "features/step_definitions/cart_steps.rb:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14589900
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:2"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33300
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 166876500
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Background",
+        "name": "",
+        "description": "",
+        "line": 3,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am logged in as \"standard_user\"",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 467038700
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I add \"Sauce Labs Backpack\" to the cart",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/inventory_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 191943100
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I go to the cart page",
+            "line": 6,
+            "match": {
+              "location": "features/step_definitions/cart_steps.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 56742700
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I proceed to checkout",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/cart_steps.rb:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 152403100
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 37500
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12800
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19400
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17100
+            }
+          }
+        ]
+      },
+      {
+        "id": "checkout;correct-item-appears-in-order-summary",
+        "keyword": "Scenario",
+        "name": "Correct item appears in order summary",
+        "description": "",
+        "line": 35,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I fill checkout form with \"David\" \"Martinho\" \"2000-105\"",
+            "line": 36,
+            "match": {
+              "location": "features/step_definitions/checkout_steps.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 386739600
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I continue to order summary",
+            "line": 37,
+            "match": {
+              "location": "features/step_definitions/checkout_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 134506700
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see \"Sauce Labs Backpack\" in the order summary",
+            "line": 38,
+            "match": {
+              "location": "features/step_definitions/checkout_steps.rb:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 56988800
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:2"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34800
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 169787000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "inventory",
+    "uri": "features/inventory.feature",
+    "keyword": "Feature",
+    "name": "Inventory",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "keyword": "Background",
+        "name": "",
+        "description": "",
+        "line": 3,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am logged in as \"standard_user\"",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 439520500
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20300
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9900
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10100
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7300
+            }
+          }
+        ]
+      },
+      {
+        "id": "inventory;display-6-products",
+        "keyword": "Scenario",
+        "name": "Display 6 products",
+        "description": "",
+        "line": 6,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Then ",
+            "name": "I should see 6 products",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/inventory_steps.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29392800
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:2"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21800
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 176648800
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Background",
+        "name": "",
+        "description": "",
+        "line": 3,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am logged in as \"standard_user\"",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 480936400
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22200
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9100
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10200
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7700
+            }
+          }
+        ]
+      },
+      {
+        "id": "inventory;add-item-to-cart",
+        "keyword": "Scenario",
+        "name": "Add item to cart",
+        "description": "",
+        "line": 9,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I add \"Sauce Labs Backpack\" to the cart",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/inventory_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 196482000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "the cart count should be \"1\"",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/inventory_steps.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 53161400
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:2"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30200
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 167068200
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Background",
+        "name": "",
+        "description": "",
+        "line": 3,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am logged in as \"standard_user\"",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 458290900
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9400
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10400
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7900
+            }
+          }
+        ]
+      },
+      {
+        "id": "inventory;add-multiple-items-to-cart",
+        "keyword": "Scenario",
+        "name": "Add multiple items to cart",
+        "description": "",
+        "line": 13,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I add \"Sauce Labs Backpack\" to the cart",
+            "line": 14,
+            "match": {
+              "location": "features/step_definitions/inventory_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 200638500
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I add \"Sauce Labs Bike Light\" to the cart",
+            "line": 15,
+            "match": {
+              "location": "features/step_definitions/inventory_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 230809600
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "the cart count should be \"2\"",
+            "line": 16,
+            "match": {
+              "location": "features/step_definitions/inventory_steps.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 46779800
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:2"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25800
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 173348600
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Background",
+        "name": "",
+        "description": "",
+        "line": 3,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am logged in as \"standard_user\"",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 446509900
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27200
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10800
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11800
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8900
+            }
+          }
+        ]
+      },
+      {
+        "id": "inventory;sort-products-a-to-z",
+        "keyword": "Scenario",
+        "name": "Sort products A to Z",
+        "description": "",
+        "line": 18,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I sort products by \"Name (A to Z)\"",
+            "line": 19,
+            "match": {
+              "location": "features/step_definitions/inventory_steps.rb:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 103721500
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "products should be sorted alphabetically ascending",
+            "line": 20,
+            "match": {
+              "location": "features/step_definitions/inventory_steps.rb:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 128455100
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:2"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 190600
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 169955200
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Background",
+        "name": "",
+        "description": "",
+        "line": 3,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am logged in as \"standard_user\"",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 443170700
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26800
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13500
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 291900
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13600
+            }
+          }
+        ]
+      },
+      {
+        "id": "inventory;sort-products-z-to-a",
+        "keyword": "Scenario",
+        "name": "Sort products Z to A",
+        "description": "",
+        "line": 22,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I sort products by \"Name (Z to A)\"",
+            "line": 23,
+            "match": {
+              "location": "features/step_definitions/inventory_steps.rb:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 159600100
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "products should be sorted alphabetically descending",
+            "line": 24,
+            "match": {
+              "location": "features/step_definitions/inventory_steps.rb:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 143147300
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:2"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19900
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 187746400
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Background",
+        "name": "",
+        "description": "",
+        "line": 3,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am logged in as \"standard_user\"",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 442276600
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21800
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17700
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17700
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14600
+            }
+          }
+        ]
+      },
+      {
+        "id": "inventory;sort-products-by-price-low-to-high",
+        "keyword": "Scenario",
+        "name": "Sort products by price low to high",
+        "description": "",
+        "line": 26,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I sort products by \"Price (low to high)\"",
+            "line": 27,
+            "match": {
+              "location": "features/step_definitions/inventory_steps.rb:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 146027600
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "products should be sorted by price ascending",
+            "line": 28,
+            "match": {
+              "location": "features/step_definitions/inventory_steps.rb:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 154647300
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:2"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29900
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 185781400
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Background",
+        "name": "",
+        "description": "",
+        "line": 3,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am logged in as \"standard_user\"",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 469936200
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34400
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15000
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16500
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12000
+            }
+          }
+        ]
+      },
+      {
+        "id": "inventory;sort-products-by-price-high-to-low",
+        "keyword": "Scenario",
+        "name": "Sort products by price high to low",
+        "description": "",
+        "line": 30,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I sort products by \"Price (high to low)\"",
+            "line": 31,
+            "match": {
+              "location": "features/step_definitions/inventory_steps.rb:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 135605400
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "products should be sorted by price descending",
+            "line": 32,
+            "match": {
+              "location": "features/step_definitions/inventory_steps.rb:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 140992700
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:2"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22600
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 166514600
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Background",
+        "name": "",
+        "description": "",
+        "line": 3,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am logged in as \"standard_user\"",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 442152900
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22700
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10500
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10800
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8700
+            }
+          }
+        ]
+      },
+      {
+        "id": "inventory;logout",
+        "keyword": "Scenario",
+        "name": "Logout",
+        "description": "",
+        "line": 34,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I logout",
+            "line": 35,
+            "match": {
+              "location": "features/step_definitions/inventory_steps.rb:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 314893400
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should be on the login page",
+            "line": 36,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14081000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:2"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 177228300
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "login",
+    "uri": "features/login.feature",
+    "keyword": "Feature",
+    "name": "Login",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "keyword": "Background",
+        "name": "",
+        "description": "",
+        "line": 3,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on the login page",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 58999500
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23800
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9400
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10600
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7300
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;login-with-valid-credentials",
+        "keyword": "Scenario",
+        "name": "Login with valid credentials",
+        "description": "",
+        "line": 6,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I login with username \"standard_user\" and password \"secret_sauce\"",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 380595700
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should be on the inventory page",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21141300
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:2"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 46500
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 183902300
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Background",
+        "name": "",
+        "description": "",
+        "line": 3,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on the login page",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 59653200
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 43100
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11900
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;login-with-locked-out-user",
+        "keyword": "Scenario",
+        "name": "Login with locked out user",
+        "description": "",
+        "line": 10,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I login with username \"locked_out_user\" and password \"secret_sauce\"",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 392422800
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see an error containing \"locked out\"",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 45430200
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:2"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22600
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 163635800
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Background",
+        "name": "",
+        "description": "",
+        "line": 3,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on the login page",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 65077300
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34500
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14400
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13900
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20300
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;login-with-invalid-credentials",
+        "keyword": "Scenario",
+        "name": "Login with invalid credentials",
+        "description": "",
+        "line": 14,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I login with username \"invalid_user\" and password \"wrong_password\"",
+            "line": 15,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 382538600
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see an error containing \"Username and password do not match\"",
+            "line": 16,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 49921500
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:2"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26300
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 182640600
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Background",
+        "name": "",
+        "description": "",
+        "line": 3,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on the login page",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 54157000
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 75900
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11600
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 70900
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15500
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;login-with-empty-username",
+        "keyword": "Scenario",
+        "name": "Login with empty username",
+        "description": "",
+        "line": 18,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I login with username \"\" and password \"secret_sauce\"",
+            "line": 19,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 422535300
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see an error containing \"Username is required\"",
+            "line": 20,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 53669100
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:2"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33600
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 166774200
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Background",
+        "name": "",
+        "description": "",
+        "line": 3,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on the login page",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 63035700
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21700
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9100
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10000
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7300
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;login-with-empty-password",
+        "keyword": "Scenario",
+        "name": "Login with empty password",
+        "description": "",
+        "line": 22,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I login with username \"standard_user\" and password \"\"",
+            "line": 23,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 419266100
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see an error containing \"Password is required\"",
+            "line": 24,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 47574000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:2"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23900
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 165537200
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

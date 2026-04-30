@@ -1,0 +1,52 @@
+name: Cucumber Tests
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    name: Run Cucumber Tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+
+      - name: Install Chrome
+        uses: browser-actions/setup-chrome@v1
+
+      - name: Create results directory
+        run: mkdir -p screenshots reports
+
+      - name: Run Cucumber tests
+        # Executes the Cucumber tests using the headless profile, which generates both HTML and JSON reports
+        run: bundle exec cucumber --profile headless
+        env:
+          CI: true
+          HEADLESS: true
+
+      - name: Upload Test Report
+        uses: actions/upload-artifact@v4
+        if: always() # Ensures the report is uploaded even if the tests fail
+        with:
+          name: cucumber-report
+          path: reports/
+          retention-days: 7
+
+      - name: Upload screenshots on failure
+        uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: failure-screenshots
+          path: screenshots/
+          retention-days: 7
