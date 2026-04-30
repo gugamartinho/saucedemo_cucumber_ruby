@@ -74,7 +74,7 @@ Make sure Google Chrome is installed on your machine. Download from [google.com/
 ### 3. Clone and install dependencies
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/cucumber-ruby-saucedemo.git
+git https://github.com/gugamartinho/saucedemo_cucumber_ruby.git
 cd cucumber-ruby-saucedemo
 
 gem install bundler
@@ -132,8 +132,3 @@ bundle exec cucumber --tags @regression
 | Checkout | Full E2E flow, missing fields (3), cancel, order summary |
 
 **Total: 23 scenarios**
-
-## Author
-
-David Martinho — QA Automation Engineer  
-[LinkedIn](https://linkedin.com/in/YOUR_PROFILE) · [GitHub](https://github.com/YOUR_USERNAME)

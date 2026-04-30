@@ -1,3 +1,2 @@
-#default: --format pretty --color --publish-quiet
 headless: --format html --out reports/report.html --format json --out reports/report.json
 default: --format pretty --format json --out reports/report.json --publish-quiet
